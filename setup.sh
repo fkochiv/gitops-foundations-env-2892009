@@ -1,7 +1,4 @@
 #!/bin/bash
 
-#USERNAME=$1
-#echo $USERNAME
-
-#find . -type f -exec sed -i '' "s/fkochiv/fkochiv/g" {} +
-#find . -type f -exec sed -i "s/fkochiv/'${USERNAME}'/g" {} \;
+# For Mac users
+find . -name '*.yaml' -type f -exec sed -i '' -E "s/{dockerHubUsername}/$1/g" {} +
